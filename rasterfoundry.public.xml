@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <database name="rasterfoundry" schema="public" type="PostgreSQL - 9.5.3">
    <tables>
-      <table name="__migrations__" numRows="45" remarks="" schema="public" type="TABLE">
+      <table name="__migrations__" numRows="47" remarks="" schema="public" type="TABLE">
          <column autoUpdated="false" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="int4"/>
          <primaryKey column="id" sequenceNumberInPK="1"/>
          <index name="__migrations___pkey" unique="true">
@@ -100,10 +100,33 @@
             <column ascending="true" name="scene"/>
          </index>
       </table>
+      <table name="map_tokens" numRows="0" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="id" nullable="false" remarks="" size="2147483647" type="uuid"/>
+         <column autoUpdated="false" digits="6" id="1" name="created_at" nullable="false" remarks="" size="29" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="2" name="created_by" nullable="false" remarks="" size="255" type="varchar">
+            <parent column="id" foreignKey="map_tokens_created_by_fkey" implied="false" onDeleteCascade="false" schema="public" table="users"/>
+         </column>
+         <column autoUpdated="false" digits="6" id="3" name="modified_at" nullable="false" remarks="" size="29" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="4" name="modified_by" nullable="false" remarks="" size="255" type="varchar">
+            <parent column="id" foreignKey="map_tokens_modified_by_fkey" implied="false" onDeleteCascade="false" schema="public" table="users"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="5" name="organization_id" nullable="false" remarks="" size="2147483647" type="uuid">
+            <parent column="id" foreignKey="map_tokens_organization_id_fkey" implied="false" onDeleteCascade="false" schema="public" table="organizations"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="6" name="project_id" nullable="false" remarks="" size="2147483647" type="uuid">
+            <parent column="id" foreignKey="map_tokens_project_id_fkey" implied="false" onDeleteCascade="false" schema="public" table="projects"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="7" name="name" nullable="true" remarks="" size="2147483647" type="text"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="map_tokens_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
       <table name="organizations" numRows="2" remarks="" schema="public" type="TABLE">
          <column autoUpdated="false" digits="0" id="0" name="id" nullable="false" remarks="" size="2147483647" type="uuid">
             <child column="organization_id" foreignKey="datasources_organization_id_fkey" implied="false" onDeleteCascade="false" schema="public" table="datasources"/>
             <child column="organization_id" foreignKey="images_organization_id_fkey" implied="false" onDeleteCascade="false" schema="public" table="images"/>
+            <child column="organization_id" foreignKey="map_tokens_organization_id_fkey" implied="false" onDeleteCascade="false" schema="public" table="map_tokens"/>
             <child column="organization_id" foreignKey="projects_organization_id_fkey" implied="false" onDeleteCascade="false" schema="public" table="projects"/>
             <child column="organization_id" foreignKey="scenes_organization_id_fkey" implied="false" onDeleteCascade="false" schema="public" table="scenes"/>
             <child column="organization_id" foreignKey="thumbnails_organization_id_fkey" implied="false" onDeleteCascade="false" schema="public" table="thumbnails"/>
@@ -122,6 +145,7 @@
       </table>
       <table name="projects" numRows="74" remarks="" schema="public" type="TABLE">
          <column autoUpdated="false" digits="0" id="0" name="id" nullable="false" remarks="" size="2147483647" type="uuid">
+            <child column="project_id" foreignKey="map_tokens_project_id_fkey" implied="false" onDeleteCascade="false" schema="public" table="map_tokens"/>
             <child column="project_id" foreignKey="scenes_to_projects_project_id_fkey" implied="false" onDeleteCascade="true" schema="public" table="scenes_to_projects"/>
             <child column="project" foreignKey="tool_runs_project_fkey" implied="false" onDeleteCascade="false" schema="public" table="tool_runs"/>
          </column>
@@ -143,6 +167,7 @@
          <column autoUpdated="false" digits="0" id="10" name="tags" nullable="false" remarks="" size="2147483647" type="_text"/>
          <column autoUpdated="false" defaultValue="true" digits="0" id="11" name="manual_order" nullable="true" remarks="" size="1" type="bool"/>
          <column autoUpdated="false" digits="0" id="12" name="extent" nullable="true" remarks="" size="2147483647" type="geometry"/>
+         <column autoUpdated="false" defaultValue="'PRIVATE'::visibility" digits="0" id="13" name="tile_visibility" nullable="false" remarks="" size="2147483647" type="visibility"/>
          <primaryKey column="id" sequenceNumberInPK="1"/>
          <index name="projects_pkey" unique="true">
             <column ascending="true" name="id"/>
@@ -261,7 +286,7 @@
             <column ascending="true" name="visibility"/>
          </index>
       </table>
-      <table name="scenes_to_projects" numRows="797" remarks="" schema="public" type="TABLE">
+      <table name="scenes_to_projects" numRows="795" remarks="" schema="public" type="TABLE">
          <column autoUpdated="false" digits="0" id="0" name="scene_id" nullable="false" remarks="" size="2147483647" type="uuid">
             <parent column="id" foreignKey="scenes_to_projects_scene_id_fkey" implied="false" onDeleteCascade="true" schema="public" table="scenes"/>
          </column>
@@ -450,6 +475,8 @@
             <child column="modified_by" foreignKey="datasources_modified_by_fkey" implied="false" onDeleteCascade="false" schema="public" table="datasources"/>
             <child column="created_by" foreignKey="images_created_by_fkey" implied="false" onDeleteCascade="false" schema="public" table="images"/>
             <child column="modified_by" foreignKey="images_modified_by_fkey" implied="false" onDeleteCascade="false" schema="public" table="images"/>
+            <child column="created_by" foreignKey="map_tokens_created_by_fkey" implied="false" onDeleteCascade="false" schema="public" table="map_tokens"/>
+            <child column="modified_by" foreignKey="map_tokens_modified_by_fkey" implied="false" onDeleteCascade="false" schema="public" table="map_tokens"/>
             <child column="created_by" foreignKey="projects_created_by_fkey" implied="false" onDeleteCascade="false" schema="public" table="projects"/>
             <child column="modified_by" foreignKey="projects_modified_by_fkey" implied="false" onDeleteCascade="false" schema="public" table="projects"/>
             <child column="created_by" foreignKey="scenes_created_by_fkey" implied="false" onDeleteCascade="false" schema="public" table="scenes"/>

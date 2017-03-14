@@ -147,6 +147,22 @@
 					</td>
 				   </tr>
 				   <tr>
+					<td title="map_tokens.created_by references users.id via map_tokens_created_by_fkey">
+						<a href='map_tokens.html'>map_tokens</a><span class='relatedKey'>.created_by</span>
+					</td>
+					<td class="constraint detail">
+						map_tokens_created_by_fkey <span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span>
+					</td>
+				   </tr>
+				   <tr>
+					<td title="map_tokens.modified_by references users.id via map_tokens_modified_by_fkey">
+						<a href='map_tokens.html'>map_tokens</a><span class='relatedKey'>.modified_by</span>
+					</td>
+					<td class="constraint detail">
+						map_tokens_modified_by_fkey <span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span>
+					</td>
+				   </tr>
+				   <tr>
 					<td title="projects.created_by references users.id via projects_created_by_fkey">
 						<a href='projects.html'>projects</a><span class='relatedKey'>.created_by</span>
 					</td>
@@ -325,39 +341,41 @@
             <div class="tab-content no-padding">            
 				<div class="chart tab-pane active" id="oneDegreeImg-chart" style="position: relative; overflow-x:auto;">					
 					<map id="oneDegreeRelationshipsDiagram" name="oneDegreeRelationshipsDiagram">
-<area shape="rect" id="node1" href="datasources.html" title="datasources" alt="" coords="287,369,462,571">
-<area shape="rect" id="node2" href="users.html" title="users" alt="" coords="5,718,208,814">
+<area shape="rect" id="node1" href="datasources.html" title="datasources" alt="" coords="287,412,462,613">
+<area shape="rect" id="node2" href="users.html" title="users" alt="" coords="5,790,208,886">
 <area shape="rect" id="node3" href="images.html" title="images" alt="" coords="804,5,992,236">
 <area shape="rect" id="node4" href="scenes.html" title="scenes" alt="" coords="558,169,743,576">
-<area shape="rect" id="node5" href="projects.html" title="projects" alt="" coords="291,661,458,863">
-<area shape="rect" id="node6" href="tool_categories.html" title="tool_categories" alt="" coords="286,1128,463,1329">
-<area shape="rect" id="node7" href="tool_runs.html" title="tool_runs" alt="" coords="541,593,760,853">
-<area shape="rect" id="node8" href="tools.html" title="tools" alt="" coords="252,880,497,1111">
-<area shape="rect" id="node9" href="tool_tags.html" title="tool_tags" alt="" coords="291,1347,458,1577">
-<area shape="rect" id="node10" href="users_to_organizations.html" title="users_to_organizations" alt="" coords="260,1595,489,1737">
+<area shape="rect" id="node5" href="map_tokens.html" title="map_tokens" alt="" coords="567,593,734,824">
+<area shape="rect" id="node6" href="projects.html" title="projects" alt="" coords="291,704,458,905">
+<area shape="rect" id="node7" href="tool_categories.html" title="tool_categories" alt="" coords="286,923,463,1124">
+<area shape="rect" id="node8" href="tool_runs.html" title="tool_runs" alt="" coords="541,1071,760,1331">
+<area shape="rect" id="node9" href="tools.html" title="tools" alt="" coords="252,1215,497,1445">
+<area shape="rect" id="node10" href="tool_tags.html" title="tool_tags" alt="" coords="291,1463,458,1693">
+<area shape="rect" id="node11" href="users_to_organizations.html" title="users_to_organizations" alt="" coords="260,1711,489,1853">
 </map>
 
 					<a name='diagram'><img id='oneDegreeImg' src='../diagrams/users.1degree.png' usemap='#oneDegreeRelationshipsDiagram' class='diagram' border='0' alt='' align='left'></a>							
 				</div>
 				<div class="chart tab-pane " id="twodegreesDegreeImg-chart" style="position: relative; overflow-x:auto;">					
 					<map id="twoDegreesRelationshipsDiagram" name="twoDegreesRelationshipsDiagram">
-<area shape="rect" id="node1" href="bands.html" title="bands" alt="" coords="1071,8,1244,92">
-<area shape="rect" id="node2" href="images.html" title="images" alt="" coords="831,5,1019,236">
-<area shape="rect" id="node4" href="users.html" title="users" alt="" coords="5,638,208,734">
-<area shape="rect" id="node5" href="organizations.html" title="organizations" alt="" coords="24,1499,189,1583">
-<area shape="rect" id="node6" href="scenes.html" title="scenes" alt="" coords="567,169,753,576">
-<area shape="rect" id="node3" href="datasources.html" title="datasources" alt="" coords="287,460,462,661">
-<area shape="rect" id="node7" href="projects.html" title="projects" alt="" coords="291,752,458,953">
-<area shape="rect" id="node8" href="scene_quadkeys.html" title="scene_quadkeys" alt="" coords="831,253,1019,337">
-<area shape="rect" id="node9" href="scenes_to_projects.html" title="scenes_to_projects" alt="" coords="823,456,1027,540">
-<area shape="rect" id="node10" href="thumbnails.html" title="thumbnails" alt="" coords="844,1128,1005,1212">
-<area shape="rect" id="node11" href="tool_categories.html" title="tool_categories" alt="" coords="286,241,463,443">
-<area shape="rect" id="node12" href="tool_categories_to_tools.html" title="tool_categories_to_tools" alt="" coords="541,631,779,715">
-<area shape="rect" id="node13" href="tools.html" title="tools" alt="" coords="252,971,497,1201">
-<area shape="rect" id="node14" href="tool_runs.html" title="tool_runs" alt="" coords="551,732,769,992">
-<area shape="rect" id="node15" href="tool_tags.html" title="tool_tags" alt="" coords="291,1219,458,1449">
-<area shape="rect" id="node16" href="tool_tags_to_tools.html" title="tool_tags_to_tools" alt="" coords="561,1116,759,1200">
-<area shape="rect" id="node17" href="users_to_organizations.html" title="users_to_organizations" alt="" coords="260,1467,489,1609">
+<area shape="rect" id="node1" href="bands.html" title="bands" alt="" coords="1071,437,1244,521">
+<area shape="rect" id="node2" href="images.html" title="images" alt="" coords="831,434,1019,665">
+<area shape="rect" id="node4" href="users.html" title="users" alt="" coords="5,709,208,805">
+<area shape="rect" id="node5" href="organizations.html" title="organizations" alt="" coords="24,1557,189,1641">
+<area shape="rect" id="node6" href="scenes.html" title="scenes" alt="" coords="567,1257,753,1663">
+<area shape="rect" id="node3" href="datasources.html" title="datasources" alt="" coords="287,1259,462,1461">
+<area shape="rect" id="node7" href="map_tokens.html" title="map_tokens" alt="" coords="577,842,743,1073">
+<area shape="rect" id="node8" href="projects.html" title="projects" alt="" coords="291,967,458,1169">
+<area shape="rect" id="node9" href="scene_quadkeys.html" title="scene_quadkeys" alt="" coords="831,1285,1019,1369">
+<area shape="rect" id="node10" href="scenes_to_projects.html" title="scenes_to_projects" alt="" coords="823,1183,1027,1267">
+<area shape="rect" id="node11" href="thumbnails.html" title="thumbnails" alt="" coords="844,1562,1005,1646">
+<area shape="rect" id="node12" href="tool_categories.html" title="tool_categories" alt="" coords="286,105,463,306">
+<area shape="rect" id="node13" href="tool_categories_to_tools.html" title="tool_categories_to_tools" alt="" coords="541,195,779,279">
+<area shape="rect" id="node14" href="tools.html" title="tools" alt="" coords="252,397,497,627">
+<area shape="rect" id="node15" href="tool_runs.html" title="tool_runs" alt="" coords="551,297,769,557">
+<area shape="rect" id="node16" href="tool_tags.html" title="tool_tags" alt="" coords="291,682,458,913">
+<area shape="rect" id="node17" href="tool_tags_to_tools.html" title="tool_tags_to_tools" alt="" coords="561,630,759,714">
+<area shape="rect" id="node18" href="users_to_organizations.html" title="users_to_organizations" alt="" coords="260,1478,489,1621">
 </map>
 
 					<a name='diagram'><img id='twodegreesDegreeImg' src='../diagrams/users.2degrees.png' usemap='#twoDegreesRelationshipsDiagram' class='diagram' border='0' alt='' align='left'></a>							
