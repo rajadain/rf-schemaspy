@@ -1,8 +1,8 @@
 spatial_ref_sys
 __migrations__
 tool_runs
+uploads
 map_tokens
-users_to_organizations
 tool_tags_to_tools
 tool_categories_to_tools
 thumbnails
@@ -16,5 +16,5 @@ tools
 projects
 scenes
 datasources
-organizations
 users
+organizations

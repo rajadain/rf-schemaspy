@@ -20,9 +20,9 @@ digraph "twoDegreesRelationshipsDiagram" {
   edge [
     arrowsize="0.8"
   ];
-  "datasources":"elipses":w -> "users":"id":e [arrowhead=none dir=back arrowtail=crowodot];
-  "datasources":"elipses":w -> "users":"id":e [arrowhead=none dir=back arrowtail=crowodot];
-  "datasources":"elipses":w -> "organizations":"id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "datasources":"created_by":w -> "users":"id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "datasources":"modified_by":w -> "users":"id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "datasources":"organization_id":w -> "organizations":"id":e [arrowhead=none dir=back arrowtail=crowodot];
   "images":"elipses":w -> "users":"id":e [arrowhead=none dir=back arrowtail=crowodot];
   "images":"elipses":w -> "users":"id":e [arrowhead=none dir=back arrowtail=crowodot];
   "images":"elipses":w -> "organizations":"id":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -35,7 +35,7 @@ digraph "twoDegreesRelationshipsDiagram" {
   "projects":"elipses":w -> "users":"id":e [arrowhead=none dir=back arrowtail=crowodot];
   "projects":"elipses":w -> "organizations":"id":e [arrowhead=none dir=back arrowtail=crowodot];
   "scenes":"elipses":w -> "users":"id":e [arrowhead=none dir=back arrowtail=crowodot];
-  "scenes":"elipses":w -> "datasources":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
+  "scenes":"elipses":w -> "datasources":"id":e [arrowhead=none dir=back arrowtail=crowodot];
   "scenes":"elipses":w -> "users":"id":e [arrowhead=none dir=back arrowtail=crowodot];
   "scenes":"elipses":w -> "organizations":"id":e [arrowhead=none dir=back arrowtail=crowodot];
   "thumbnails":"elipses":w -> "organizations":"id":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -47,23 +47,25 @@ digraph "twoDegreesRelationshipsDiagram" {
   "tool_runs":"elipses":w -> "organizations":"id":e [arrowhead=none dir=back arrowtail=crowodot];
   "tool_runs":"elipses":w -> "projects":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "tool_runs":"elipses":w -> "tools":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
-  "tool_tags":"created_by":w -> "users":"id":e [arrowhead=none dir=back arrowtail=crowodot];
-  "tool_tags":"modified_by":w -> "users":"id":e [arrowhead=none dir=back arrowtail=crowodot];
-  "tool_tags":"organization_id":w -> "organizations":"id":e [arrowhead=none dir=back arrowtail=crowodot];
-  "tool_tags_to_tools":"tool_id":w -> "tools":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
-  "tool_tags_to_tools":"tool_tag_id":w -> "tool_tags":"id.type":e [arrowhead=none dir=back arrowtail=crowodot];
+  "tool_tags":"elipses":w -> "users":"id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "tool_tags":"elipses":w -> "users":"id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "tool_tags":"elipses":w -> "organizations":"id":e [arrowhead=none dir=back arrowtail=crowodot];
   "tools":"elipses":w -> "users":"id":e [arrowhead=none dir=back arrowtail=crowodot];
   "tools":"elipses":w -> "users":"id":e [arrowhead=none dir=back arrowtail=crowodot];
   "tools":"elipses":w -> "organizations":"id":e [arrowhead=none dir=back arrowtail=crowodot];
-  "uploads":"elipses":w -> "users":"id":e [arrowhead=none dir=back arrowtail=crowodot];
-  "uploads":"elipses":w -> "datasources":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
-  "uploads":"elipses":w -> "users":"id":e [arrowhead=none dir=back arrowtail=crowodot];
-  "uploads":"elipses":w -> "organizations":"id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "uploads":"created_by":w -> "users":"id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "uploads":"datasource":w -> "datasources":"id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "uploads":"modified_by":w -> "users":"id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "uploads":"organization_id":w -> "organizations":"id":e [arrowhead=none dir=back arrowtail=crowodot];
   "users":"organization_id":w -> "organizations":"id":e [arrowhead=none dir=back arrowtail=crowodot];
   "datasources" [
    label=<
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT"><B>datasources</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../images/primaryKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="94" HEIGHT="16">id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="created_by" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="94" HEIGHT="16">created_by</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="modified_by" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="94" HEIGHT="16">modified_by</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="organization_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="94" HEIGHT="16">organization_id</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 3</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">4 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">2 &gt;</TD></TR>
     </TABLE>>
@@ -153,30 +155,13 @@ digraph "twoDegreesRelationshipsDiagram" {
   ];
   "tool_tags" [
    label=<
-    <TABLE BORDER="2" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
-      <TR><TD COLSPAN="4"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT"><B>tool_tags</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
-      <TR><TD PORT="id" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../images/primaryKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="88" HEIGHT="16">id</TD></TR></TABLE></TD><TD PORT="id.type" ALIGN="LEFT">uuid[2147483647]</TD></TR>
-      <TR><TD PORT="created_at" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="88" HEIGHT="16">created_at</TD></TR></TABLE></TD><TD PORT="created_at.type" ALIGN="LEFT">timestamp[29,6]</TD></TR>
-      <TR><TD PORT="modified_at" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="88" HEIGHT="16">modified_at</TD></TR></TABLE></TD><TD PORT="modified_at.type" ALIGN="LEFT">timestamp[29,6]</TD></TR>
-      <TR><TD PORT="created_by" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="88" HEIGHT="16">created_by</TD></TR></TABLE></TD><TD PORT="created_by.type" ALIGN="LEFT">varchar[255]</TD></TR>
-      <TR><TD PORT="modified_by" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="88" HEIGHT="16">modified_by</TD></TR></TABLE></TD><TD PORT="modified_by.type" ALIGN="LEFT">varchar[255]</TD></TR>
-      <TR><TD PORT="organization_id" COLSPAN="2" BGCOLOR="#ffffff" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="88" HEIGHT="16">organization_id</TD></TR></TABLE></TD><TD PORT="organization_id.type" ALIGN="LEFT">uuid[2147483647]</TD></TR>
-      <TR><TD PORT="tag" COLSPAN="2" BGCOLOR="#ffffff" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="88" HEIGHT="16">tag</TD></TR></TABLE></TD><TD PORT="tag.type" ALIGN="LEFT">varchar[255]</TD></TR>
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT"><B>tool_tags</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 3</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">2 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">1 &gt;</TD></TR>
     </TABLE>>
     URL="tool_tags.html"
     tooltip="tool_tags"
-  ];
-  "tool_tags_to_tools" [
-   label=<
-    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
-      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT"><B>tool_tags_to_tools</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
-      <TR><TD PORT="tool_tag_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../images/primaryKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="106" HEIGHT="16">tool_tag_id</TD></TR></TABLE></TD></TR>
-      <TR><TD PORT="tool_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../images/primaryKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="106" HEIGHT="16">tool_id</TD></TR></TABLE></TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">4 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">  </TD></TR>
-    </TABLE>>
-    URL="tool_tags_to_tools.html"
-    tooltip="tool_tags_to_tools"
   ];
   "tools" [
    label=<
@@ -190,10 +175,21 @@ digraph "twoDegreesRelationshipsDiagram" {
   ];
   "uploads" [
    label=<
-    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
-      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT"><B>uploads</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
-      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">1 row</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">  </TD></TR>
+    <TABLE BORDER="2" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="4"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT"><B>uploads</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="id" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../images/primaryKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="88" HEIGHT="16">id</TD></TR></TABLE></TD><TD PORT="id.type" ALIGN="LEFT">uuid[2147483647]</TD></TR>
+      <TR><TD PORT="created_at" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="88" HEIGHT="16">created_at</TD></TR></TABLE></TD><TD PORT="created_at.type" ALIGN="LEFT">timestamp[29,6]</TD></TR>
+      <TR><TD PORT="created_by" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="88" HEIGHT="16">created_by</TD></TR></TABLE></TD><TD PORT="created_by.type" ALIGN="LEFT">varchar[255]</TD></TR>
+      <TR><TD PORT="modified_at" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="88" HEIGHT="16">modified_at</TD></TR></TABLE></TD><TD PORT="modified_at.type" ALIGN="LEFT">timestamp[29,6]</TD></TR>
+      <TR><TD PORT="modified_by" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="88" HEIGHT="16">modified_by</TD></TR></TABLE></TD><TD PORT="modified_by.type" ALIGN="LEFT">varchar[255]</TD></TR>
+      <TR><TD PORT="organization_id" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="88" HEIGHT="16">organization_id</TD></TR></TABLE></TD><TD PORT="organization_id.type" ALIGN="LEFT">uuid[2147483647]</TD></TR>
+      <TR><TD PORT="upload_status" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="88" HEIGHT="16">upload_status</TD></TR></TABLE></TD><TD PORT="upload_status.type" ALIGN="LEFT">upload_status[2147483647]</TD></TR>
+      <TR><TD PORT="file_type" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="88" HEIGHT="16">file_type</TD></TR></TABLE></TD><TD PORT="file_type.type" ALIGN="LEFT">file_type[2147483647]</TD></TR>
+      <TR><TD PORT="upload_type" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="88" HEIGHT="16">upload_type</TD></TR></TABLE></TD><TD PORT="upload_type.type" ALIGN="LEFT">upload_type[2147483647]</TD></TR>
+      <TR><TD PORT="files" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="88" HEIGHT="16">files</TD></TR></TABLE></TD><TD PORT="files.type" ALIGN="LEFT">_text[2147483647]</TD></TR>
+      <TR><TD PORT="datasource" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="88" HEIGHT="16">datasource</TD></TR></TABLE></TD><TD PORT="datasource.type" ALIGN="LEFT">uuid[2147483647]</TD></TR>
+      <TR><TD PORT="metadata" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="88" HEIGHT="16">metadata</TD></TR></TABLE></TD><TD PORT="metadata.type" ALIGN="LEFT">jsonb[2147483647]</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">1 row</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">0 &gt;</TD></TR>
     </TABLE>>
     URL="uploads.html"
     tooltip="uploads"

@@ -101,890 +101,10 @@
 				</thead>
 				<tbody>
 				<tr>
-				 <td>scenes_to_projects</td>
-				 <td>Table</td>
-				 <td>scene_order</td>
-				 <td>int4</td>
-				 <td>10</td>
-				 <td title='nullable'>√</td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>scene_quadkeys</td>
-				 <td>Table</td>
-				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>scene_id</td>
-				 <td>uuid</td>
-				 <td>2147483647</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>scene_quadkeys</td>
-				 <td>Table</td>
-				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>id</td>
-				 <td>uuid</td>
-				 <td>2147483647</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>tools</td>
-				 <td>Table</td>
-				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>organization_id</td>
-				 <td>uuid</td>
-				 <td>2147483647</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>raster_overviews</td>
-				 <td>View</td>
-				 <td>overview_factor</td>
-				 <td>int4</td>
-				 <td>10</td>
-				 <td title='nullable'>√</td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>tools</td>
-				 <td>Table</td>
-				 <td>license</td>
-				 <td>text</td>
-				 <td>2147483647</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>tool_categories</td>
-				 <td>Table</td>
-				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>modified_by</td>
-				 <td>varchar</td>
-				 <td>255</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>spatial_ref_sys</td>
-				 <td>Table</td>
-				 <td>proj4text</td>
-				 <td>varchar</td>
-				 <td>2048</td>
-				 <td title='nullable'>√</td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>bands</td>
-				 <td>Table</td>
-				 <td>number</td>
-				 <td>int4</td>
-				 <td>10</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>tools</td>
-				 <td>Table</td>
-				 <td>modified_at</td>
-				 <td>timestamp</td>
-				 <td>29</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>tools</td>
-				 <td>Table</td>
-				 <td>visibility</td>
-				 <td>visibility</td>
-				 <td>2147483647</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>users_to_organizations</td>
-				 <td>Table</td>
-				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>user_id</td>
-				 <td>varchar</td>
-				 <td>255</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>scenes</td>
-				 <td>Table</td>
-				 <td>sun_azimuth</td>
-				 <td>float4</td>
-				 <td>8</td>
-				 <td title='nullable'>√</td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>users</td>
-				 <td>Table</td>
-				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>id</td>
-				 <td>varchar</td>
-				 <td>255</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
 				 <td>bands</td>
 				 <td>Table</td>
 				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>image_id</td>
 				 <td>uuid</td>
-				 <td>2147483647</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>tools</td>
-				 <td>Table</td>
-				 <td>stars</td>
-				 <td>float4</td>
-				 <td>8</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>0.0</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>spatial_ref_sys</td>
-				 <td>Table</td>
-				 <td>auth_srid</td>
-				 <td>int4</td>
-				 <td>10</td>
-				 <td title='nullable'>√</td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>geography_columns</td>
-				 <td>View</td>
-				 <td>f_table_schema</td>
-				 <td>name</td>
-				 <td>2147483647</td>
-				 <td title='nullable'>√</td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>map_tokens</td>
-				 <td>Table</td>
-				 <td>modified_at</td>
-				 <td>timestamp</td>
-				 <td>29</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>images</td>
-				 <td>Table</td>
-				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>scene</td>
-				 <td>uuid</td>
-				 <td>2147483647</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>thumbnails</td>
-				 <td>Table</td>
-				 <td>width_px</td>
-				 <td>int4</td>
-				 <td>10</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>map_tokens</td>
-				 <td>Table</td>
-				 <td>name</td>
-				 <td>text</td>
-				 <td>2147483647</td>
-				 <td title='nullable'>√</td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>geography_columns</td>
-				 <td>View</td>
-				 <td>f_table_name</td>
-				 <td>name</td>
-				 <td>2147483647</td>
-				 <td title='nullable'>√</td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>scenes</td>
-				 <td>Table</td>
-				 <td>ingest_location</td>
-				 <td>text</td>
-				 <td>2147483647</td>
-				 <td title='nullable'>√</td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>thumbnails</td>
-				 <td>Table</td>
-				 <td>modified_at</td>
-				 <td>timestamp</td>
-				 <td>29</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>tool_tags</td>
-				 <td>Table</td>
-				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>modified_by</td>
-				 <td>varchar</td>
-				 <td>255</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>tools</td>
-				 <td>Table</td>
-				 <td>description</td>
-				 <td>text</td>
-				 <td>2147483647</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>scenes</td>
-				 <td>Table</td>
-				 <td class='indexedColumn' title='Indexed'><i class='fa fa-sitemap fa-rotate-120' style='padding-right: 5px;'></i>created_at</td>
-				 <td>timestamp</td>
-				 <td>29</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>raster_columns</td>
-				 <td>View</td>
-				 <td>blocksize_y</td>
-				 <td>int4</td>
-				 <td>10</td>
-				 <td title='nullable'>√</td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>datasources</td>
-				 <td>Table</td>
-				 <td>composites</td>
-				 <td>jsonb</td>
-				 <td>2147483647</td>
-				 <td title='nullable'>√</td>
-				 <td title=''></td>
-				 <td>&#39;{}&#39;::jsonb</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>geography_columns</td>
-				 <td>View</td>
-				 <td>f_table_catalog</td>
-				 <td>name</td>
-				 <td>2147483647</td>
-				 <td title='nullable'>√</td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>scene_quadkeys</td>
-				 <td>Table</td>
-				 <td class='indexedColumn' title='Indexed'><i class='fa fa-sitemap fa-rotate-120' style='padding-right: 5px;'></i>quadkey</td>
-				 <td>varchar</td>
-				 <td>17</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>organizations</td>
-				 <td>Table</td>
-				 <td>created_at</td>
-				 <td>timestamp</td>
-				 <td>29</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>tool_tags</td>
-				 <td>Table</td>
-				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>organization_id</td>
-				 <td>uuid</td>
-				 <td>2147483647</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>raster_columns</td>
-				 <td>View</td>
-				 <td>num_bands</td>
-				 <td>int4</td>
-				 <td>10</td>
-				 <td title='nullable'>√</td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>projects</td>
-				 <td>Table</td>
-				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>created_by</td>
-				 <td>varchar</td>
-				 <td>255</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>tool_tags</td>
-				 <td>Table</td>
-				 <td>modified_at</td>
-				 <td>timestamp</td>
-				 <td>29</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>tool_tags</td>
-				 <td>Table</td>
-				 <td class='indexedColumn' title='Indexed'><i class='fa fa-sitemap fa-rotate-120' style='padding-right: 5px;'></i>tag</td>
-				 <td>varchar</td>
-				 <td>255</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>raster_columns</td>
-				 <td>View</td>
-				 <td>srid</td>
-				 <td>int4</td>
-				 <td>10</td>
-				 <td title='nullable'>√</td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>projects</td>
-				 <td>Table</td>
-				 <td>slug_label</td>
-				 <td>varchar</td>
-				 <td>255</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>raster_overviews</td>
-				 <td>View</td>
-				 <td>r_raster_column</td>
-				 <td>name</td>
-				 <td>2147483647</td>
-				 <td title='nullable'>√</td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>datasources</td>
-				 <td>Table</td>
-				 <td>visibility</td>
-				 <td>visibility</td>
-				 <td>2147483647</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>tool_categories</td>
-				 <td>Table</td>
-				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>created_by</td>
-				 <td>varchar</td>
-				 <td>255</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>geometry_columns</td>
-				 <td>View</td>
-				 <td>f_geometry_column</td>
-				 <td>name</td>
-				 <td>2147483647</td>
-				 <td title='nullable'>√</td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>images</td>
-				 <td>Table</td>
-				 <td>created_at</td>
-				 <td>timestamp</td>
-				 <td>29</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>map_tokens</td>
-				 <td>Table</td>
-				 <td>created_at</td>
-				 <td>timestamp</td>
-				 <td>29</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>tool_runs</td>
-				 <td>Table</td>
-				 <td>visibility</td>
-				 <td>visibility</td>
-				 <td>2147483647</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>scenes</td>
-				 <td>Table</td>
-				 <td class='indexedColumn' title='Indexed'><i class='fa fa-sitemap fa-rotate-120' style='padding-right: 5px;'></i>data_footprint</td>
-				 <td>geometry</td>
-				 <td>2147483647</td>
-				 <td title='nullable'>√</td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>tool_categories</td>
-				 <td>Table</td>
-				 <td>modified_at</td>
-				 <td>timestamp</td>
-				 <td>29</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>raster_columns</td>
-				 <td>View</td>
-				 <td>r_table_catalog</td>
-				 <td>name</td>
-				 <td>2147483647</td>
-				 <td title='nullable'>√</td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>tool_runs</td>
-				 <td>Table</td>
-				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>created_by</td>
-				 <td>varchar</td>
-				 <td>255</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>tools</td>
-				 <td>Table</td>
-				 <td>created_at</td>
-				 <td>timestamp</td>
-				 <td>29</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>images</td>
-				 <td>Table</td>
-				 <td>image_metadata</td>
-				 <td>jsonb</td>
-				 <td>2147483647</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>tool_categories</td>
-				 <td>Table</td>
-				 <td>created_at</td>
-				 <td>timestamp</td>
-				 <td>29</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>geography_columns</td>
-				 <td>View</td>
-				 <td>type</td>
-				 <td>text</td>
-				 <td>2147483647</td>
-				 <td title='nullable'>√</td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>bands</td>
-				 <td>Table</td>
-				 <td>name</td>
-				 <td>varchar</td>
-				 <td>255</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>datasources</td>
-				 <td>Table</td>
-				 <td>extras</td>
-				 <td>jsonb</td>
-				 <td>2147483647</td>
-				 <td title='nullable'>√</td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>geometry_columns</td>
-				 <td>View</td>
-				 <td>srid</td>
-				 <td>int4</td>
-				 <td>10</td>
-				 <td title='nullable'>√</td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>scenes</td>
-				 <td>Table</td>
-				 <td>sun_elevation</td>
-				 <td>float4</td>
-				 <td>8</td>
-				 <td title='nullable'>√</td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>thumbnails</td>
-				 <td>Table</td>
-				 <td>height_px</td>
-				 <td>int4</td>
-				 <td>10</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>scenes</td>
-				 <td>Table</td>
-				 <td>scene_metadata</td>
-				 <td>jsonb</td>
-				 <td>2147483647</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>geometry_columns</td>
-				 <td>View</td>
-				 <td>f_table_name</td>
-				 <td>name</td>
-				 <td>2147483647</td>
-				 <td title='nullable'>√</td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>geography_columns</td>
-				 <td>View</td>
-				 <td>coord_dimension</td>
-				 <td>int4</td>
-				 <td>10</td>
-				 <td title='nullable'>√</td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>geography_columns</td>
-				 <td>View</td>
-				 <td>f_geography_column</td>
-				 <td>name</td>
-				 <td>2147483647</td>
-				 <td title='nullable'>√</td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>datasources</td>
-				 <td>Table</td>
-				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>modified_by</td>
-				 <td>varchar</td>
-				 <td>255</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>bands</td>
-				 <td>Table</td>
-				 <td>wavelength</td>
-				 <td>_int4</td>
-				 <td>10</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>scenes</td>
-				 <td>Table</td>
-				 <td class='indexedColumn' title='Indexed'><i class='fa fa-sitemap fa-rotate-120' style='padding-right: 5px;'></i>acquisition_date</td>
-				 <td>timestamp</td>
-				 <td>29</td>
-				 <td title='nullable'>√</td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>images</td>
-				 <td>Table</td>
-				 <td>visibility</td>
-				 <td>visibility</td>
-				 <td>2147483647</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>tool_runs</td>
-				 <td>Table</td>
-				 <td>created_at</td>
-				 <td>timestamp</td>
-				 <td>29</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>scenes</td>
-				 <td>Table</td>
-				 <td>tags</td>
-				 <td>_text</td>
-				 <td>2147483647</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>users_to_organizations</td>
-				 <td>Table</td>
-				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>organization_id</td>
-				 <td>uuid</td>
-				 <td>2147483647</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>images</td>
-				 <td>Table</td>
-				 <td>metadata_files</td>
-				 <td>_text</td>
-				 <td>2147483647</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>&#39;{}&#39;::text[]</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>raster_columns</td>
-				 <td>View</td>
-				 <td>spatial_index</td>
-				 <td>bool</td>
-				 <td>1</td>
-				 <td title='nullable'>√</td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>tools</td>
-				 <td>Table</td>
-				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>created_by</td>
-				 <td>varchar</td>
-				 <td>255</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>map_tokens</td>
-				 <td>Table</td>
-				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>created_by</td>
-				 <td>varchar</td>
-				 <td>255</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>scenes</td>
-				 <td>Table</td>
-				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>organization_id</td>
-				 <td>uuid</td>
-				 <td>2147483647</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>tool_runs</td>
-				 <td>Table</td>
-				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>project</td>
-				 <td>uuid</td>
-				 <td>2147483647</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>raster_columns</td>
-				 <td>View</td>
-				 <td>regular_blocking</td>
-				 <td>bool</td>
-				 <td>1</td>
-				 <td title='nullable'>√</td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>raster_columns</td>
-				 <td>View</td>
-				 <td>r_raster_column</td>
-				 <td>name</td>
-				 <td>2147483647</td>
-				 <td title='nullable'>√</td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>tool_tags</td>
-				 <td>Table</td>
-				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>id</td>
-				 <td>uuid</td>
-				 <td>2147483647</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>scenes</td>
-				 <td>Table</td>
-				 <td>thumbnail_status</td>
-				 <td>job_status</td>
 				 <td>2147483647</td>
 				 <td title=''></td>
 				 <td title=''></td>
@@ -1003,34 +123,23 @@
 				 <td></td>
 				</tr>
 				<tr>
-				 <td>projects</td>
+				 <td>tools</td>
 				 <td>Table</td>
-				 <td>visibility</td>
-				 <td>visibility</td>
-				 <td>2147483647</td>
+				 <td>created_at</td>
+				 <td>timestamp</td>
+				 <td>29</td>
 				 <td title=''></td>
 				 <td title=''></td>
 				 <td>null</td>
 				 <td></td>
 				</tr>
 				<tr>
-				 <td>projects</td>
+				 <td>datasources</td>
 				 <td>Table</td>
-				 <td>manual_order</td>
-				 <td>bool</td>
-				 <td>1</td>
+				 <td>extras</td>
+				 <td>jsonb</td>
+				 <td>2147483647</td>
 				 <td title='nullable'>√</td>
-				 <td title=''></td>
-				 <td>true</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>spatial_ref_sys</td>
-				 <td>Table</td>
-				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>srid</td>
-				 <td>int4</td>
-				 <td>10</td>
-				 <td title=''></td>
 				 <td title=''></td>
 				 <td>null</td>
 				 <td></td>
@@ -1047,43 +156,21 @@
 				 <td></td>
 				</tr>
 				<tr>
-				 <td>spatial_ref_sys</td>
-				 <td>Table</td>
-				 <td>auth_name</td>
-				 <td>varchar</td>
-				 <td>256</td>
-				 <td title='nullable'>√</td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>scenes</td>
-				 <td>Table</td>
-				 <td>ingest_size_bytes</td>
-				 <td>int4</td>
-				 <td>10</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>tool_runs</td>
+				 <td>users</td>
 				 <td>Table</td>
 				 <td>modified_at</td>
 				 <td>timestamp</td>
 				 <td>29</td>
 				 <td title=''></td>
 				 <td title=''></td>
-				 <td>null</td>
+				 <td>timezone(&#39;utc&#39;::text, now())</td>
 				 <td></td>
 				</tr>
 				<tr>
 				 <td>raster_columns</td>
 				 <td>View</td>
-				 <td>r_table_name</td>
-				 <td>name</td>
+				 <td>pixel_types</td>
+				 <td>_text</td>
 				 <td>2147483647</td>
 				 <td title='nullable'>√</td>
 				 <td title=''></td>
@@ -1091,329 +178,10 @@
 				 <td></td>
 				</tr>
 				<tr>
-				 <td>projects</td>
-				 <td>Table</td>
-				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>organization_id</td>
-				 <td>uuid</td>
-				 <td>2147483647</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>raster_overviews</td>
-				 <td>View</td>
-				 <td>r_table_catalog</td>
-				 <td>name</td>
-				 <td>2147483647</td>
-				 <td title='nullable'>√</td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>thumbnails</td>
-				 <td>Table</td>
-				 <td>url</td>
-				 <td>varchar</td>
-				 <td>255</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>tool_runs</td>
-				 <td>Table</td>
-				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>tool</td>
-				 <td>uuid</td>
-				 <td>2147483647</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>tools</td>
+				 <td>scene_quadkeys</td>
 				 <td>Table</td>
 				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>id</td>
 				 <td>uuid</td>
-				 <td>2147483647</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>projects</td>
-				 <td>Table</td>
-				 <td>name</td>
-				 <td>text</td>
-				 <td>2147483647</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>raster_overviews</td>
-				 <td>View</td>
-				 <td>o_table_name</td>
-				 <td>name</td>
-				 <td>2147483647</td>
-				 <td title='nullable'>√</td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>thumbnails</td>
-				 <td>Table</td>
-				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>organization_id</td>
-				 <td>uuid</td>
-				 <td>2147483647</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>images</td>
-				 <td>Table</td>
-				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>id</td>
-				 <td>uuid</td>
-				 <td>2147483647</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>tool_tags</td>
-				 <td>Table</td>
-				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>created_by</td>
-				 <td>varchar</td>
-				 <td>255</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>tools</td>
-				 <td>Table</td>
-				 <td class='indexedColumn' title='Indexed'><i class='fa fa-sitemap fa-rotate-120' style='padding-right: 5px;'></i>title</td>
-				 <td>varchar</td>
-				 <td>255</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>__migrations__</td>
-				 <td>Table</td>
-				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>id</td>
-				 <td>int4</td>
-				 <td>10</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>raster_overviews</td>
-				 <td>View</td>
-				 <td>r_table_name</td>
-				 <td>name</td>
-				 <td>2147483647</td>
-				 <td title='nullable'>√</td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>tool_tags_to_tools</td>
-				 <td>Table</td>
-				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>tool_id</td>
-				 <td>uuid</td>
-				 <td>2147483647</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>images</td>
-				 <td>Table</td>
-				 <td>modified_at</td>
-				 <td>timestamp</td>
-				 <td>29</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>scenes</td>
-				 <td>Table</td>
-				 <td class='indexedColumn' title='Indexed'><i class='fa fa-sitemap fa-rotate-120' style='padding-right: 5px;'></i>visibility</td>
-				 <td>visibility</td>
-				 <td>2147483647</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>organizations</td>
-				 <td>Table</td>
-				 <td>modified_at</td>
-				 <td>timestamp</td>
-				 <td>29</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>raster_columns</td>
-				 <td>View</td>
-				 <td>blocksize_x</td>
-				 <td>int4</td>
-				 <td>10</td>
-				 <td title='nullable'>√</td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>thumbnails</td>
-				 <td>Table</td>
-				 <td>thumbnail_size</td>
-				 <td>thumbnailsize</td>
-				 <td>2147483647</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>geometry_columns</td>
-				 <td>View</td>
-				 <td>coord_dimension</td>
-				 <td>int4</td>
-				 <td>10</td>
-				 <td title='nullable'>√</td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>raster_columns</td>
-				 <td>View</td>
-				 <td>same_alignment</td>
-				 <td>bool</td>
-				 <td>1</td>
-				 <td title='nullable'>√</td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>datasources</td>
-				 <td>Table</td>
-				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>organization_id</td>
-				 <td>uuid</td>
-				 <td>2147483647</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>projects</td>
-				 <td>Table</td>
-				 <td>tile_visibility</td>
-				 <td>visibility</td>
-				 <td>2147483647</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>&#39;PRIVATE&#39;::visibility</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>raster_columns</td>
-				 <td>View</td>
-				 <td>scale_x</td>
-				 <td>float8</td>
-				 <td>17</td>
-				 <td title='nullable'>√</td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>datasources</td>
-				 <td>Table</td>
-				 <td>created_at</td>
-				 <td>timestamp</td>
-				 <td>29</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>tool_runs</td>
-				 <td>Table</td>
-				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>organization</td>
-				 <td>uuid</td>
-				 <td>2147483647</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>tool_categories</td>
-				 <td>Table</td>
-				 <td class='indexedColumn' title='Indexed'><i class='fa fa-sitemap fa-rotate-120' style='padding-right: 5px;'></i>category</td>
-				 <td>varchar</td>
-				 <td>255</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>scenes</td>
-				 <td>Table</td>
-				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>created_by</td>
-				 <td>varchar</td>
-				 <td>255</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>scenes</td>
-				 <td>Table</td>
-				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>id</td>
-				 <td>uuid</td>
-				 <td>2147483647</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>images</td>
-				 <td>Table</td>
-				 <td>sourceuri</td>
-				 <td>text</td>
 				 <td>2147483647</td>
 				 <td title=''></td>
 				 <td title=''></td>
@@ -1423,62 +191,7 @@
 				<tr>
 				 <td>geography_columns</td>
 				 <td>View</td>
-				 <td>srid</td>
-				 <td>int4</td>
-				 <td>10</td>
-				 <td title='nullable'>√</td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>scenes</td>
-				 <td>Table</td>
-				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>datasource</td>
-				 <td>uuid</td>
-				 <td>2147483647</td>
-				 <td title='nullable'>√</td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>images</td>
-				 <td>Table</td>
-				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>modified_by</td>
-				 <td>varchar</td>
-				 <td>255</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>datasources</td>
-				 <td>Table</td>
-				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>created_by</td>
-				 <td>varchar</td>
-				 <td>255</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>projects</td>
-				 <td>Table</td>
-				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>modified_by</td>
-				 <td>varchar</td>
-				 <td>255</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>raster_overviews</td>
-				 <td>View</td>
-				 <td>o_raster_column</td>
+				 <td>f_table_schema</td>
 				 <td>name</td>
 				 <td>2147483647</td>
 				 <td title='nullable'>√</td>
@@ -1487,117 +200,7 @@
 				 <td></td>
 				</tr>
 				<tr>
-				 <td>tools</td>
-				 <td>Table</td>
-				 <td>definition</td>
-				 <td>jsonb</td>
-				 <td>2147483647</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>&#39;{}&#39;::jsonb</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>datasources</td>
-				 <td>Table</td>
-				 <td>color_correction</td>
-				 <td>jsonb</td>
-				 <td>2147483647</td>
-				 <td title='nullable'>√</td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>tool_runs</td>
-				 <td>Table</td>
-				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>modified_by</td>
-				 <td>varchar</td>
-				 <td>255</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>projects</td>
-				 <td>Table</td>
-				 <td>tags</td>
-				 <td>_text</td>
-				 <td>2147483647</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>raster_overviews</td>
-				 <td>View</td>
-				 <td>o_table_catalog</td>
-				 <td>name</td>
-				 <td>2147483647</td>
-				 <td title='nullable'>√</td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>tools</td>
-				 <td>Table</td>
-				 <td>compatible_data_sources</td>
-				 <td>_text</td>
-				 <td>2147483647</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>&#39;{}&#39;::text[]</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>users_to_organizations</td>
-				 <td>Table</td>
-				 <td>modified_at</td>
-				 <td>timestamp</td>
-				 <td>29</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>projects</td>
-				 <td>Table</td>
-				 <td>created_at</td>
-				 <td>timestamp</td>
-				 <td>29</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>thumbnails</td>
-				 <td>Table</td>
-				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>scene</td>
-				 <td>uuid</td>
-				 <td>2147483647</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>datasources</td>
-				 <td>Table</td>
-				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>id</td>
-				 <td>uuid</td>
-				 <td>2147483647</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>tools</td>
+				 <td>tool_tags</td>
 				 <td>Table</td>
 				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>modified_by</td>
 				 <td>varchar</td>
@@ -1619,40 +222,7 @@
 				 <td></td>
 				</tr>
 				<tr>
-				 <td>projects</td>
-				 <td>Table</td>
-				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>id</td>
-				 <td>uuid</td>
-				 <td>2147483647</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>organizations</td>
-				 <td>Table</td>
-				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>id</td>
-				 <td>uuid</td>
-				 <td>2147483647</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>projects</td>
-				 <td>Table</td>
-				 <td>description</td>
-				 <td>text</td>
-				 <td>2147483647</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>thumbnails</td>
+				 <td>tool_runs</td>
 				 <td>Table</td>
 				 <td>created_at</td>
 				 <td>timestamp</td>
@@ -1663,40 +233,18 @@
 				 <td></td>
 				</tr>
 				<tr>
-				 <td>scenes</td>
+				 <td>thumbnails</td>
 				 <td>Table</td>
-				 <td>tile_footprint</td>
-				 <td>geometry</td>
+				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>id</td>
+				 <td>uuid</td>
 				 <td>2147483647</td>
-				 <td title='nullable'>√</td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>tool_categories</td>
-				 <td>Table</td>
-				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>slug_label</td>
-				 <td>varchar</td>
-				 <td>255</td>
 				 <td title=''></td>
 				 <td title=''></td>
 				 <td>null</td>
 				 <td></td>
 				</tr>
 				<tr>
-				 <td>scenes</td>
-				 <td>Table</td>
-				 <td class='indexedColumn' title='Indexed'><i class='fa fa-sitemap fa-rotate-120' style='padding-right: 5px;'></i>name</td>
-				 <td>varchar</td>
-				 <td>255</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>images</td>
+				 <td>uploads</td>
 				 <td>Table</td>
 				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>organization_id</td>
 				 <td>uuid</td>
@@ -1707,22 +255,11 @@
 				 <td></td>
 				</tr>
 				<tr>
-				 <td>scenes_to_projects</td>
+				 <td>projects</td>
 				 <td>Table</td>
-				 <td>mosaic_definition</td>
-				 <td>jsonb</td>
+				 <td>visibility</td>
+				 <td>visibility</td>
 				 <td>2147483647</td>
-				 <td title='nullable'>√</td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>tool_tags</td>
-				 <td>Table</td>
-				 <td>created_at</td>
-				 <td>timestamp</td>
-				 <td>29</td>
 				 <td title=''></td>
 				 <td title=''></td>
 				 <td>null</td>
@@ -1730,17 +267,6 @@
 				</tr>
 				<tr>
 				 <td>tool_runs</td>
-				 <td>Table</td>
-				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>id</td>
-				 <td>uuid</td>
-				 <td>2147483647</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>projects</td>
 				 <td>Table</td>
 				 <td>modified_at</td>
 				 <td>timestamp</td>
@@ -1751,9 +277,86 @@
 				 <td></td>
 				</tr>
 				<tr>
-				 <td>map_tokens</td>
+				 <td>raster_overviews</td>
+				 <td>View</td>
+				 <td>o_table_name</td>
+				 <td>name</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>raster_overviews</td>
+				 <td>View</td>
+				 <td>r_table_schema</td>
+				 <td>name</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>projects</td>
+				 <td>Table</td>
+				 <td>manual_order</td>
+				 <td>bool</td>
+				 <td>1</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>true</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>tools</td>
+				 <td>Table</td>
+				 <td>requirements</td>
+				 <td>text</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>scenes</td>
 				 <td>Table</td>
 				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>modified_by</td>
+				 <td>varchar</td>
+				 <td>255</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>tool_runs</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>modified_by</td>
+				 <td>varchar</td>
+				 <td>255</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>tools</td>
+				 <td>Table</td>
+				 <td>compatible_data_sources</td>
+				 <td>_text</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>&#39;{}&#39;::text[]</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>tool_categories</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>created_by</td>
 				 <td>varchar</td>
 				 <td>255</td>
 				 <td title=''></td>
@@ -1773,9 +376,75 @@
 				 <td></td>
 				</tr>
 				<tr>
-				 <td>raster_columns</td>
+				 <td>datasources</td>
+				 <td>Table</td>
+				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>id</td>
+				 <td>uuid</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>scenes</td>
+				 <td>Table</td>
+				 <td>metadata_files</td>
+				 <td>_text</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>&#39;{}&#39;::text[]</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>uploads</td>
+				 <td>Table</td>
+				 <td>upload_status</td>
+				 <td>upload_status</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>projects</td>
+				 <td>Table</td>
+				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>id</td>
+				 <td>uuid</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>thumbnails</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>organization_id</td>
+				 <td>uuid</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>tools</td>
+				 <td>Table</td>
+				 <td>stars</td>
+				 <td>float4</td>
+				 <td>8</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>0.0</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>geometry_columns</td>
 				 <td>View</td>
-				 <td>r_table_schema</td>
+				 <td>f_table_schema</td>
 				 <td>name</td>
 				 <td>2147483647</td>
 				 <td title='nullable'>√</td>
@@ -1784,29 +453,7 @@
 				 <td></td>
 				</tr>
 				<tr>
-				 <td>raster_columns</td>
-				 <td>View</td>
-				 <td>extent</td>
-				 <td>geometry</td>
-				 <td>2147483647</td>
-				 <td title='nullable'>√</td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>spatial_ref_sys</td>
-				 <td>Table</td>
-				 <td>srtext</td>
-				 <td>varchar</td>
-				 <td>2048</td>
-				 <td title='nullable'>√</td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>scenes</td>
+				 <td>tool_categories</td>
 				 <td>Table</td>
 				 <td>modified_at</td>
 				 <td>timestamp</td>
@@ -1817,12 +464,23 @@
 				 <td></td>
 				</tr>
 				<tr>
-				 <td>raster_columns</td>
-				 <td>View</td>
-				 <td>pixel_types</td>
-				 <td>_text</td>
+				 <td>datasources</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>organization_id</td>
+				 <td>uuid</td>
 				 <td>2147483647</td>
-				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>scenes</td>
+				 <td>Table</td>
+				 <td>ingest_size_bytes</td>
+				 <td>int4</td>
+				 <td>10</td>
+				 <td title=''></td>
 				 <td title=''></td>
 				 <td>null</td>
 				 <td></td>
@@ -1830,10 +488,21 @@
 				<tr>
 				 <td>raster_columns</td>
 				 <td>View</td>
-				 <td>scale_y</td>
-				 <td>float8</td>
-				 <td>17</td>
+				 <td>same_alignment</td>
+				 <td>bool</td>
+				 <td>1</td>
 				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>projects</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>organization_id</td>
+				 <td>uuid</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
 				 <td title=''></td>
 				 <td>null</td>
 				 <td></td>
@@ -1850,10 +519,10 @@
 				 <td></td>
 				</tr>
 				<tr>
-				 <td>map_tokens</td>
+				 <td>datasources</td>
 				 <td>Table</td>
-				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>id</td>
-				 <td>uuid</td>
+				 <td>visibility</td>
+				 <td>visibility</td>
 				 <td>2147483647</td>
 				 <td title=''></td>
 				 <td title=''></td>
@@ -1861,55 +530,33 @@
 				 <td></td>
 				</tr>
 				<tr>
-				 <td>tool_runs</td>
+				 <td>datasources</td>
 				 <td>Table</td>
-				 <td>execution_parameters</td>
-				 <td>jsonb</td>
-				 <td>2147483647</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>&#39;{}&#39;::jsonb</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>geometry_columns</td>
-				 <td>View</td>
-				 <td>type</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>created_by</td>
 				 <td>varchar</td>
-				 <td>30</td>
-				 <td title='nullable'>√</td>
+				 <td>255</td>
+				 <td title=''></td>
 				 <td title=''></td>
 				 <td>null</td>
 				 <td></td>
 				</tr>
 				<tr>
-				 <td>raster_overviews</td>
-				 <td>View</td>
-				 <td>r_table_schema</td>
-				 <td>name</td>
-				 <td>2147483647</td>
-				 <td title='nullable'>√</td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>scenes_to_projects</td>
+				 <td>projects</td>
 				 <td>Table</td>
-				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>project_id</td>
-				 <td>uuid</td>
-				 <td>2147483647</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>modified_by</td>
+				 <td>varchar</td>
+				 <td>255</td>
 				 <td title=''></td>
 				 <td title=''></td>
 				 <td>null</td>
 				 <td></td>
 				</tr>
 				<tr>
-				 <td>scenes_to_projects</td>
+				 <td>thumbnails</td>
 				 <td>Table</td>
-				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>scene_id</td>
-				 <td>uuid</td>
-				 <td>2147483647</td>
+				 <td>url</td>
+				 <td>varchar</td>
+				 <td>255</td>
 				 <td title=''></td>
 				 <td title=''></td>
 				 <td>null</td>
@@ -1927,32 +574,10 @@
 				 <td></td>
 				</tr>
 				<tr>
-				 <td>datasources</td>
-				 <td>Table</td>
-				 <td>name</td>
-				 <td>text</td>
-				 <td>2147483647</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>datasources</td>
-				 <td>Table</td>
-				 <td>modified_at</td>
-				 <td>timestamp</td>
-				 <td>29</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
 				 <td>images</td>
 				 <td>Table</td>
-				 <td>filename</td>
-				 <td>text</td>
+				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>id</td>
+				 <td>uuid</td>
 				 <td>2147483647</td>
 				 <td title=''></td>
 				 <td title=''></td>
@@ -1960,7 +585,62 @@
 				 <td></td>
 				</tr>
 				<tr>
-				 <td>users_to_organizations</td>
+				 <td>users</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>organization_id</td>
+				 <td>uuid</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>&#39;dfac6307-b5ef-43f7-beda-b9f208bb7726&#39;::uuid</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>tool_tags</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>created_by</td>
+				 <td>varchar</td>
+				 <td>255</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>tool_categories</td>
+				 <td>Table</td>
+				 <td class='indexedColumn' title='Indexed'><i class='fa fa-sitemap fa-rotate-120' style='padding-right: 5px;'></i>category</td>
+				 <td>varchar</td>
+				 <td>255</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>organizations</td>
+				 <td>Table</td>
+				 <td>name</td>
+				 <td>varchar</td>
+				 <td>255</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>tool_runs</td>
+				 <td>Table</td>
+				 <td>execution_parameters</td>
+				 <td>jsonb</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>&#39;{}&#39;::jsonb</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>datasources</td>
 				 <td>Table</td>
 				 <td>created_at</td>
 				 <td>timestamp</td>
@@ -1971,11 +651,33 @@
 				 <td></td>
 				</tr>
 				<tr>
-				 <td>raster_columns</td>
-				 <td>View</td>
-				 <td>out_db</td>
-				 <td>_bool</td>
-				 <td>1</td>
+				 <td>uploads</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>created_by</td>
+				 <td>varchar</td>
+				 <td>255</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>map_tokens</td>
+				 <td>Table</td>
+				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>id</td>
+				 <td>uuid</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>scenes</td>
+				 <td>Table</td>
+				 <td>sun_elevation</td>
+				 <td>float4</td>
+				 <td>8</td>
 				 <td title='nullable'>√</td>
 				 <td title=''></td>
 				 <td>null</td>
@@ -1984,8 +686,63 @@
 				<tr>
 				 <td>tools</td>
 				 <td>Table</td>
-				 <td>requirements</td>
+				 <td>modified_at</td>
+				 <td>timestamp</td>
+				 <td>29</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>spatial_ref_sys</td>
+				 <td>Table</td>
+				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>srid</td>
+				 <td>int4</td>
+				 <td>10</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>geography_columns</td>
+				 <td>View</td>
+				 <td>type</td>
 				 <td>text</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>scenes</td>
+				 <td>Table</td>
+				 <td class='indexedColumn' title='Indexed'><i class='fa fa-sitemap fa-rotate-120' style='padding-right: 5px;'></i>data_footprint</td>
+				 <td>geometry</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>scenes</td>
+				 <td>Table</td>
+				 <td class='indexedColumn' title='Indexed'><i class='fa fa-sitemap fa-rotate-120' style='padding-right: 5px;'></i>acquisition_date</td>
+				 <td>timestamp</td>
+				 <td>29</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>scenes</td>
+				 <td>Table</td>
+				 <td class='indexedColumn' title='Indexed'><i class='fa fa-sitemap fa-rotate-120' style='padding-right: 5px;'></i>visibility</td>
+				 <td>visibility</td>
 				 <td>2147483647</td>
 				 <td title=''></td>
 				 <td title=''></td>
@@ -1993,12 +750,177 @@
 				 <td></td>
 				</tr>
 				<tr>
-				 <td>bands</td>
+				 <td>tool_tags</td>
 				 <td>Table</td>
 				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>id</td>
 				 <td>uuid</td>
 				 <td>2147483647</td>
 				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>map_tokens</td>
+				 <td>Table</td>
+				 <td>name</td>
+				 <td>text</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>organizations</td>
+				 <td>Table</td>
+				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>id</td>
+				 <td>uuid</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>map_tokens</td>
+				 <td>Table</td>
+				 <td>modified_at</td>
+				 <td>timestamp</td>
+				 <td>29</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>scenes</td>
+				 <td>Table</td>
+				 <td>tags</td>
+				 <td>_text</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>tool_categories_to_tools</td>
+				 <td>Table</td>
+				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>tool_category_slug</td>
+				 <td>varchar</td>
+				 <td>255</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>images</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>scene</td>
+				 <td>uuid</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>geometry_columns</td>
+				 <td>View</td>
+				 <td>srid</td>
+				 <td>int4</td>
+				 <td>10</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>projects</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>created_by</td>
+				 <td>varchar</td>
+				 <td>255</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>datasources</td>
+				 <td>Table</td>
+				 <td>composites</td>
+				 <td>jsonb</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>&#39;{}&#39;::jsonb</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>tool_categories</td>
+				 <td>Table</td>
+				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>slug_label</td>
+				 <td>varchar</td>
+				 <td>255</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>tool_runs</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>created_by</td>
+				 <td>varchar</td>
+				 <td>255</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>organizations</td>
+				 <td>Table</td>
+				 <td>modified_at</td>
+				 <td>timestamp</td>
+				 <td>29</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>projects</td>
+				 <td>Table</td>
+				 <td>tags</td>
+				 <td>_text</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>raster_columns</td>
+				 <td>View</td>
+				 <td>regular_blocking</td>
+				 <td>bool</td>
+				 <td>1</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>spatial_ref_sys</td>
+				 <td>Table</td>
+				 <td>auth_srid</td>
+				 <td>int4</td>
+				 <td>10</td>
+				 <td title='nullable'>√</td>
 				 <td title=''></td>
 				 <td>null</td>
 				 <td></td>
@@ -2015,31 +937,9 @@
 				 <td></td>
 				</tr>
 				<tr>
-				 <td>images</td>
-				 <td>Table</td>
-				 <td>resolution_meters</td>
-				 <td>float4</td>
-				 <td>8</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>map_tokens</td>
-				 <td>Table</td>
-				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>organization_id</td>
-				 <td>uuid</td>
-				 <td>2147483647</td>
-				 <td title=''></td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>geometry_columns</td>
+				 <td>geography_columns</td>
 				 <td>View</td>
-				 <td>f_table_schema</td>
+				 <td>f_table_catalog</td>
 				 <td>name</td>
 				 <td>2147483647</td>
 				 <td title='nullable'>√</td>
@@ -2048,7 +948,95 @@
 				 <td></td>
 				</tr>
 				<tr>
-				 <td>scenes</td>
+				 <td>uploads</td>
+				 <td>Table</td>
+				 <td>metadata</td>
+				 <td>jsonb</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>tools</td>
+				 <td>Table</td>
+				 <td class='indexedColumn' title='Indexed'><i class='fa fa-sitemap fa-rotate-120' style='padding-right: 5px;'></i>title</td>
+				 <td>varchar</td>
+				 <td>255</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>datasources</td>
+				 <td>Table</td>
+				 <td>name</td>
+				 <td>text</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>map_tokens</td>
+				 <td>Table</td>
+				 <td>created_at</td>
+				 <td>timestamp</td>
+				 <td>29</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>images</td>
+				 <td>Table</td>
+				 <td>modified_at</td>
+				 <td>timestamp</td>
+				 <td>29</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>uploads</td>
+				 <td>Table</td>
+				 <td>created_at</td>
+				 <td>timestamp</td>
+				 <td>29</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>scenes_to_projects</td>
+				 <td>Table</td>
+				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>scene_id</td>
+				 <td>uuid</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>raster_columns</td>
+				 <td>View</td>
+				 <td>scale_x</td>
+				 <td>float8</td>
+				 <td>17</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>tool_categories</td>
 				 <td>Table</td>
 				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>modified_by</td>
 				 <td>varchar</td>
@@ -2070,7 +1058,95 @@
 				 <td></td>
 				</tr>
 				<tr>
-				 <td>organizations</td>
+				 <td>tool_runs</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>project</td>
+				 <td>uuid</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>thumbnails</td>
+				 <td>Table</td>
+				 <td>created_at</td>
+				 <td>timestamp</td>
+				 <td>29</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>scenes</td>
+				 <td>Table</td>
+				 <td>sun_azimuth</td>
+				 <td>float4</td>
+				 <td>8</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>projects</td>
+				 <td>Table</td>
+				 <td>created_at</td>
+				 <td>timestamp</td>
+				 <td>29</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>images</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>organization_id</td>
+				 <td>uuid</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>tools</td>
+				 <td>Table</td>
+				 <td>visibility</td>
+				 <td>visibility</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>raster_columns</td>
+				 <td>View</td>
+				 <td>scale_y</td>
+				 <td>float8</td>
+				 <td>17</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>tools</td>
+				 <td>Table</td>
+				 <td>description</td>
+				 <td>text</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>bands</td>
 				 <td>Table</td>
 				 <td>name</td>
 				 <td>varchar</td>
@@ -2081,9 +1157,185 @@
 				 <td></td>
 				</tr>
 				<tr>
-				 <td>tool_categories_to_tools</td>
+				 <td>thumbnails</td>
 				 <td>Table</td>
-				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>tool_category_slug</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>scene</td>
+				 <td>uuid</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>scenes</td>
+				 <td>Table</td>
+				 <td>ingest_location</td>
+				 <td>text</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>raster_overviews</td>
+				 <td>View</td>
+				 <td>r_table_name</td>
+				 <td>name</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>geography_columns</td>
+				 <td>View</td>
+				 <td>srid</td>
+				 <td>int4</td>
+				 <td>10</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>bands</td>
+				 <td>Table</td>
+				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>id</td>
+				 <td>uuid</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>tool_tags</td>
+				 <td>Table</td>
+				 <td>modified_at</td>
+				 <td>timestamp</td>
+				 <td>29</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>geometry_columns</td>
+				 <td>View</td>
+				 <td>f_table_name</td>
+				 <td>name</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>map_tokens</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>modified_by</td>
+				 <td>varchar</td>
+				 <td>255</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>projects</td>
+				 <td>Table</td>
+				 <td>modified_at</td>
+				 <td>timestamp</td>
+				 <td>29</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>tool_tags_to_tools</td>
+				 <td>Table</td>
+				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>tool_id</td>
+				 <td>uuid</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>raster_columns</td>
+				 <td>View</td>
+				 <td>blocksize_x</td>
+				 <td>int4</td>
+				 <td>10</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>uploads</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>modified_by</td>
+				 <td>varchar</td>
+				 <td>255</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>organizations</td>
+				 <td>Table</td>
+				 <td>created_at</td>
+				 <td>timestamp</td>
+				 <td>29</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>geometry_columns</td>
+				 <td>View</td>
+				 <td>type</td>
+				 <td>varchar</td>
+				 <td>30</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>raster_overviews</td>
+				 <td>View</td>
+				 <td>overview_factor</td>
+				 <td>int4</td>
+				 <td>10</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>tool_tags</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>organization_id</td>
+				 <td>uuid</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>scenes</td>
+				 <td>Table</td>
+				 <td class='indexedColumn' title='Indexed'><i class='fa fa-sitemap fa-rotate-120' style='padding-right: 5px;'></i>name</td>
 				 <td>varchar</td>
 				 <td>255</td>
 				 <td title=''></td>
@@ -2094,12 +1346,210 @@
 				<tr>
 				 <td>scenes</td>
 				 <td>Table</td>
-				 <td>metadata_files</td>
-				 <td>_text</td>
+				 <td>scene_metadata</td>
+				 <td>jsonb</td>
 				 <td>2147483647</td>
 				 <td title=''></td>
 				 <td title=''></td>
-				 <td>&#39;{}&#39;::text[]</td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>scenes</td>
+				 <td>Table</td>
+				 <td>thumbnail_status</td>
+				 <td>job_status</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>users</td>
+				 <td>Table</td>
+				 <td>created_at</td>
+				 <td>timestamp</td>
+				 <td>29</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>timezone(&#39;utc&#39;::text, now())</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>raster_overviews</td>
+				 <td>View</td>
+				 <td>o_table_schema</td>
+				 <td>name</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>scenes</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>organization_id</td>
+				 <td>uuid</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>projects</td>
+				 <td>Table</td>
+				 <td>tile_visibility</td>
+				 <td>visibility</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>&#39;PRIVATE&#39;::visibility</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>thumbnails</td>
+				 <td>Table</td>
+				 <td>width_px</td>
+				 <td>int4</td>
+				 <td>10</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>datasources</td>
+				 <td>Table</td>
+				 <td>modified_at</td>
+				 <td>timestamp</td>
+				 <td>29</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>images</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>modified_by</td>
+				 <td>varchar</td>
+				 <td>255</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>projects</td>
+				 <td>Table</td>
+				 <td>slug_label</td>
+				 <td>varchar</td>
+				 <td>255</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>scene_quadkeys</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>scene_id</td>
+				 <td>uuid</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>users</td>
+				 <td>Table</td>
+				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>id</td>
+				 <td>varchar</td>
+				 <td>255</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>raster_columns</td>
+				 <td>View</td>
+				 <td>r_raster_column</td>
+				 <td>name</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>scenes</td>
+				 <td>Table</td>
+				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>id</td>
+				 <td>uuid</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>datasources</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>modified_by</td>
+				 <td>varchar</td>
+				 <td>255</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>uploads</td>
+				 <td>Table</td>
+				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>id</td>
+				 <td>uuid</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>scenes</td>
+				 <td>Table</td>
+				 <td>modified_at</td>
+				 <td>timestamp</td>
+				 <td>29</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>spatial_ref_sys</td>
+				 <td>Table</td>
+				 <td>auth_name</td>
+				 <td>varchar</td>
+				 <td>256</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>scenes</td>
+				 <td>Table</td>
+				 <td>tile_footprint</td>
+				 <td>geometry</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
 				 <td></td>
 				</tr>
 				<tr>
@@ -2114,12 +1564,386 @@
 				 <td></td>
 				</tr>
 				<tr>
-				 <td>thumbnails</td>
+				 <td>images</td>
+				 <td>Table</td>
+				 <td>created_at</td>
+				 <td>timestamp</td>
+				 <td>29</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>tool_runs</td>
 				 <td>Table</td>
 				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>id</td>
 				 <td>uuid</td>
 				 <td>2147483647</td>
 				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>images</td>
+				 <td>Table</td>
+				 <td>resolution_meters</td>
+				 <td>float4</td>
+				 <td>8</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>scenes</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>created_by</td>
+				 <td>varchar</td>
+				 <td>255</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>tool_categories_to_tools</td>
+				 <td>Table</td>
+				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>tool_id</td>
+				 <td>uuid</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>uploads</td>
+				 <td>Table</td>
+				 <td>files</td>
+				 <td>_text</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>raster_columns</td>
+				 <td>View</td>
+				 <td>out_db</td>
+				 <td>_bool</td>
+				 <td>1</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>__migrations__</td>
+				 <td>Table</td>
+				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>id</td>
+				 <td>int4</td>
+				 <td>10</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>projects</td>
+				 <td>Table</td>
+				 <td>description</td>
+				 <td>text</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>geography_columns</td>
+				 <td>View</td>
+				 <td>f_table_name</td>
+				 <td>name</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>scenes_to_projects</td>
+				 <td>Table</td>
+				 <td>scene_order</td>
+				 <td>int4</td>
+				 <td>10</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>uploads</td>
+				 <td>Table</td>
+				 <td>upload_type</td>
+				 <td>upload_type</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>uploads</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>datasource</td>
+				 <td>uuid</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>datasources</td>
+				 <td>Table</td>
+				 <td>color_correction</td>
+				 <td>jsonb</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>images</td>
+				 <td>Table</td>
+				 <td>image_metadata</td>
+				 <td>jsonb</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>images</td>
+				 <td>Table</td>
+				 <td>filename</td>
+				 <td>text</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>scene_quadkeys</td>
+				 <td>Table</td>
+				 <td class='indexedColumn' title='Indexed'><i class='fa fa-sitemap fa-rotate-120' style='padding-right: 5px;'></i>quadkey</td>
+				 <td>varchar</td>
+				 <td>17</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>raster_columns</td>
+				 <td>View</td>
+				 <td>num_bands</td>
+				 <td>int4</td>
+				 <td>10</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>tools</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>created_by</td>
+				 <td>varchar</td>
+				 <td>255</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>images</td>
+				 <td>Table</td>
+				 <td>sourceuri</td>
+				 <td>text</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>tool_runs</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>organization</td>
+				 <td>uuid</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>raster_columns</td>
+				 <td>View</td>
+				 <td>srid</td>
+				 <td>int4</td>
+				 <td>10</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>tools</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>modified_by</td>
+				 <td>varchar</td>
+				 <td>255</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>thumbnails</td>
+				 <td>Table</td>
+				 <td>thumbnail_size</td>
+				 <td>thumbnailsize</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>images</td>
+				 <td>Table</td>
+				 <td>metadata_files</td>
+				 <td>_text</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>&#39;{}&#39;::text[]</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>geography_columns</td>
+				 <td>View</td>
+				 <td>f_geography_column</td>
+				 <td>name</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>raster_overviews</td>
+				 <td>View</td>
+				 <td>r_raster_column</td>
+				 <td>name</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>raster_overviews</td>
+				 <td>View</td>
+				 <td>r_table_catalog</td>
+				 <td>name</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>tool_runs</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>tool</td>
+				 <td>uuid</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>bands</td>
+				 <td>Table</td>
+				 <td>wavelength</td>
+				 <td>_int4</td>
+				 <td>10</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>raster_columns</td>
+				 <td>View</td>
+				 <td>r_table_schema</td>
+				 <td>name</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>spatial_ref_sys</td>
+				 <td>Table</td>
+				 <td>proj4text</td>
+				 <td>varchar</td>
+				 <td>2048</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>tool_tags</td>
+				 <td>Table</td>
+				 <td>created_at</td>
+				 <td>timestamp</td>
+				 <td>29</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>geometry_columns</td>
+				 <td>View</td>
+				 <td>coord_dimension</td>
+				 <td>int4</td>
+				 <td>10</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>raster_columns</td>
+				 <td>View</td>
+				 <td>extent</td>
+				 <td>geometry</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
 				 <td title=''></td>
 				 <td>null</td>
 				 <td></td>
@@ -2136,20 +1960,9 @@
 				 <td></td>
 				</tr>
 				<tr>
-				 <td>raster_overviews</td>
-				 <td>View</td>
-				 <td>o_table_schema</td>
-				 <td>name</td>
-				 <td>2147483647</td>
-				 <td title='nullable'>√</td>
-				 <td title=''></td>
-				 <td>null</td>
-				 <td></td>
-				</tr>
-				<tr>
-				 <td>users_to_organizations</td>
+				 <td>map_tokens</td>
 				 <td>Table</td>
-				 <td>role</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>created_by</td>
 				 <td>varchar</td>
 				 <td>255</td>
 				 <td title=''></td>
@@ -2158,11 +1971,319 @@
 				 <td></td>
 				</tr>
 				<tr>
-				 <td>tool_categories_to_tools</td>
+				 <td>projects</td>
 				 <td>Table</td>
-				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>tool_id</td>
+				 <td>name</td>
+				 <td>text</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>tool_tags</td>
+				 <td>Table</td>
+				 <td class='indexedColumn' title='Indexed'><i class='fa fa-sitemap fa-rotate-120' style='padding-right: 5px;'></i>tag</td>
+				 <td>varchar</td>
+				 <td>255</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>raster_columns</td>
+				 <td>View</td>
+				 <td>spatial_index</td>
+				 <td>bool</td>
+				 <td>1</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>tools</td>
+				 <td>Table</td>
+				 <td>license</td>
+				 <td>text</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>spatial_ref_sys</td>
+				 <td>Table</td>
+				 <td>srtext</td>
+				 <td>varchar</td>
+				 <td>2048</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>bands</td>
+				 <td>Table</td>
+				 <td>number</td>
+				 <td>int4</td>
+				 <td>10</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>raster_overviews</td>
+				 <td>View</td>
+				 <td>o_raster_column</td>
+				 <td>name</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>raster_columns</td>
+				 <td>View</td>
+				 <td>r_table_catalog</td>
+				 <td>name</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>tools</td>
+				 <td>Table</td>
+				 <td>definition</td>
+				 <td>jsonb</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>&#39;{}&#39;::jsonb</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>tool_runs</td>
+				 <td>Table</td>
+				 <td>visibility</td>
+				 <td>visibility</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>raster_overviews</td>
+				 <td>View</td>
+				 <td>o_table_catalog</td>
+				 <td>name</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>uploads</td>
+				 <td>Table</td>
+				 <td>modified_at</td>
+				 <td>timestamp</td>
+				 <td>29</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>scenes</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>datasource</td>
 				 <td>uuid</td>
 				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>thumbnails</td>
+				 <td>Table</td>
+				 <td>height_px</td>
+				 <td>int4</td>
+				 <td>10</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>scenes_to_projects</td>
+				 <td>Table</td>
+				 <td>mosaic_definition</td>
+				 <td>jsonb</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>scenes_to_projects</td>
+				 <td>Table</td>
+				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>project_id</td>
+				 <td>uuid</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>tools</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>organization_id</td>
+				 <td>uuid</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>images</td>
+				 <td>Table</td>
+				 <td>visibility</td>
+				 <td>visibility</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>raster_columns</td>
+				 <td>View</td>
+				 <td>blocksize_y</td>
+				 <td>int4</td>
+				 <td>10</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>users</td>
+				 <td>Table</td>
+				 <td>role</td>
+				 <td>varchar</td>
+				 <td>255</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>&#39;VIEWER&#39;::character varying</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>scenes</td>
+				 <td>Table</td>
+				 <td class='indexedColumn' title='Indexed'><i class='fa fa-sitemap fa-rotate-120' style='padding-right: 5px;'></i>created_at</td>
+				 <td>timestamp</td>
+				 <td>29</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>tools</td>
+				 <td>Table</td>
+				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>id</td>
+				 <td>uuid</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>geography_columns</td>
+				 <td>View</td>
+				 <td>coord_dimension</td>
+				 <td>int4</td>
+				 <td>10</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>map_tokens</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>organization_id</td>
+				 <td>uuid</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>raster_columns</td>
+				 <td>View</td>
+				 <td>r_table_name</td>
+				 <td>name</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>geometry_columns</td>
+				 <td>View</td>
+				 <td>f_geometry_column</td>
+				 <td>name</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>tool_categories</td>
+				 <td>Table</td>
+				 <td>created_at</td>
+				 <td>timestamp</td>
+				 <td>29</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>uploads</td>
+				 <td>Table</td>
+				 <td>file_type</td>
+				 <td>file_type</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td>thumbnails</td>
+				 <td>Table</td>
+				 <td>modified_at</td>
+				 <td>timestamp</td>
+				 <td>29</td>
 				 <td title=''></td>
 				 <td title=''></td>
 				 <td>null</td>

@@ -1,5 +1,5 @@
-users
 organizations
+users
 datasources
 scenes
 projects
@@ -13,8 +13,8 @@ scenes_to_projects
 thumbnails
 tool_categories_to_tools
 tool_tags_to_tools
-users_to_organizations
 map_tokens
+uploads
 tool_runs
 __migrations__
 spatial_ref_sys
